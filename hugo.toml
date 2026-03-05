@@ -1,0 +1,9 @@
+baseURL = 'https://ginachoi168.github.io/'
+languageCode = 'en-us'
+theme = "anatole"
+enableEmoji = true
+
+[params]
+title = "My Playground"
+author = "ginachoi168"
+description = "My personal project playground"
