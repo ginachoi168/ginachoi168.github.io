@@ -1,0 +1,25 @@
+---
+layout: default
+title: Home
+---
+<section class="intro">
+  <p class="eyebrow">PERSONAL WEBSPACE</p>
+  <h1>A small corner<br>of the internet.</h1>
+  <p>Notes, projects, observations, and things worth keeping.</p>
+</section>
+
+<section>
+  <h2>Latest entries</h2>
+
+  {% for post in site.posts %}
+    <article class="post-preview">
+      <time>{{ post.date | date: "%d %b %Y" }}</time>
+      <h3>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a>
+      </h3>
+      <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+    </article>
+  {% endfor %}
+</section>

@@ -1,0 +1,61 @@
+
+:root {
+  /* Backgrounds */
+  --bg: #050D1B;
+  --panel: #091629;
+  --panel-raised: #0C1D31;
+  --code-bg: #06101D;
+  --selection: #102740;
+
+  /* Text */
+  --text: #C7D5E7;
+  --muted: #718BA7;
+  --gold: #D5B85D;
+  --cyan: #39C6DC;
+  --mint: #8FD6B3;
+  --blue: #91B9FF;
+  --error: #FF827A;
+
+  /* Borders */
+  --border: #183B57;
+  --line-number: #506A83;
+
+  /* Fonts */
+  --font-ui: "Lucida Console", "Courier New", monospace;
+  --font-body: Verdana, Arial, sans-serif;
+  --font-code: "Cascadia Code", Consolas,
+               "Courier New", monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+}
+
+h1, h2, h3, nav, .metadata {
+  font-family: var(--font-ui);
+}
+
+pre, code {
+  font-family: var(--font-code);
+}
+
+pre {
+  background: var(--code-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 16px;
+  overflow-x: auto;
+  line-height: 1.65;
+  tab-size: 4;
+}
+
+a {
+  color: var(--cyan);
+}
+
+a:hover {
+  color: var(--gold);
+}

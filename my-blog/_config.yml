@@ -1,0 +1,7 @@
+title: "Novacide"
+description: "A personal corner of the internet."
+baseurl: ""
+url: ""
+markdown: kramdown
+permalink: /posts/:title/
+timezone: America/Vancouver
